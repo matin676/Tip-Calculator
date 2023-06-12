@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <img src="images/logo.svg" alt="logo" class="logo">
+    <div class="left-container">
+      <h6 class="bill">Bill</h6>
+      <div class="tip-input input">
+        <img src="images/icon-dollar.svg" alt="icon-dollar" class="input-img">
+        <input type="number" id="tip" class="zero" placeholder="0">
+      </div>
+      <div class="tip-selection">
+        <h6>Select Tip %</h6>
+        <div class="tip-upper">
+          <div class="tip">5%</div>
+          <div class="tip">10%</div>
+          <div class="tip">15%</div>
+        </div>
+        <div class="tip-lower">
+          <div class="tip margin">25%</div>
+          <div class="tip margin">50%</div>
+          <input type="number" class="tip custom margin zero" placeholder="Custom" id="custom">
+        </div>
+      </div>
+      <p id="error"></p>
+      <h6>Number of People</h6>
+      <div class="person-input input">
+        <img src="images/icon-person.svg" alt="icon-person" class="input-img">
+        <input type="number" id="person" class="zero" placeholder="0" required>
+      </div>
+    </div>
+    <div class="right-container">
+      <div class="result">
+        <div class="result-upper">
+          <div>
+            <h6 class="result-label">Tip Amount</h6>
+            <span>/ person</span>
+          </div>
+          <div class="result-show">
+            <img src="images/icon-dollar.svg" alt="icon-dollar">
+            <p id="per-person-tip">0.00</p>
+          </div>
+        </div>
+        <div class="result-lower">
+          <div>
+            <h6 class="result-label">Total</h6>
+            <span>/ person</span>
+          </div>
+          <div class="result-show">
+            <img src="images/icon-dollar.svg" alt="icon-dollar">
+            <p id="total-tip">0.00</p>
+          </div>
+        </div>
+        <button id="reset" class="btn">RESET</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

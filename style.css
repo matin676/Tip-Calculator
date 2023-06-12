@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+  transition: all 0.4s ease-in-out;
+}
+
+body {
+  background-color: hsl(185, 41%, 84%);
+}
+
+h6 {
+  font-size: 15px;
+  color: hsl(186, 14%, 43%);
+}
+
+.container {
+  position: absolute;
+  display: flex;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 700px;
+  height: 350px;
+  border-radius: 15px;
+}
+
+.logo {
+  transform: translateY(-15rem);
+}
+
+.left-container {
+  position: absolute;
+  left: 2rem;
+}
+
+.right-container {
+  position: absolute;
+  right: 2rem;
+}
+
+.bill {
+  transform: translateY(-4px);
+}
+
+.input {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  background-color: hsl(189, 41%, 97%);
+  color: hsl(184, 14%, 56%);
+  font-size: 20px;
+  width: 20rem;
+  height: 2rem;
+  padding: 0.5rem;
+  border-radius: 3px;
+}
+
+.zero {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  text-align: end;
+  font-size: 20px;
+  color: hsl(183, 100%, 15%);
+  font-weight: 700;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+::placeholder {
+  color: hsl(184, 14%, 56%);
+}
+
+.input-img {
+  width: 0.5rem;
+  height: 0.8rem;
+}
+
+.tip-input img {
+  filter: invert(81%) sepia(9%) saturate(542%) hue-rotate(135deg)
+    brightness(90%) contrast(88%);
+}
+
+.tip-selection {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.tip-upper,
+.tip-lower {
+  display: flex;
+}
+
+.tip {
+  width: 6rem;
+  height: 2.5rem;
+  background-color: hsl(183, 100%, 15%);
+  color: hsl(189, 41%, 97%);
+  border-radius: 6px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 2.5rem;
+  margin: 1rem;
+  margin-left: 0;
+  font-weight: 700;
+}
+
+.tip::placeholder {
+  color: hsl(183, 100%, 15%);
+}
+
+.margin {
+  margin-top: 0;
+}
+
+.custom {
+  background-color: hsl(189, 41%, 97%);
+  color: hsl(183, 100%, 15%);
+  font-weight: 700;
+}
+
+.result {
+  background-color: hsl(183, 100%, 15%);
+  width: 300px;
+  height: 300px;
+  border-radius: 15px;
+  padding-left: 2rem;
+  padding-top: 2.5rem;
+  padding-right: 2rem;
+}
+
+.result-upper,
+.result-lower {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin: 2rem 0;
+  margin-top: 0;
+}
+
+.result-label {
+  font-size: 12px;
+  color: hsl(189, 41%, 97%);
+}
+
+span {
+  color: hsl(184, 14%, 56%);
+  font-size: 12px;
+}
+
+.result-show {
+  display: flex;
+  color: hsl(172, 67%, 45%);
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.result-show img {
+  filter: invert(62%) sepia(53%) saturate(605%) hue-rotate(122deg)
+    brightness(93%) contrast(83%);
+  width: 15px;
+  height: 25px;
+  margin-top: 0.6rem;
+}
+
+button {
+  font-size: 15px;
+  width: 240px;
+  height: 2.5rem;
+  color: hsla(183, 100%, 15%, 0.319);
+  background-color: hsl(183, 95%, 23%);
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  font-weight: 700;
+  transform: translateY(2.5rem);
+}
+
+.tip:hover {
+  cursor: pointer;
+  color: hsl(183, 100%, 15%);
+  background-color: hsl(185, 41%, 84%);
+}
+
+.btn:hover {
+  cursor: no-drop;
+}
+
+#error {
+  color: red;
+  font-size: 10px;
+  transform: translate(15rem, 1.3rem);
+}
+
+.selected {
+  color: hsl(183, 100%, 15%);
+  background-color: hsl(185, 41%, 84%);
+}
+
+.active {
+  color: hsl(183, 100%, 15%);
+  background-color: hsl(185, 41%, 84%);
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 400px;
+    height: 700px;
+    transform: translateY(10rem);
+  }
+  .left-container {
+    transform: translateY(-10rem);
+  }
+  .right-container {
+    transform: translate(-2rem, 11rem);
+  }
+  .logo {
+    transform: translateY(-25rem);
+  }
+  button {
+    transform: translateY(1.5rem);
+  }
+}
